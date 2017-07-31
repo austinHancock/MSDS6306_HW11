@@ -12,6 +12,7 @@ source("HW 11 Calculations.R")
 
 ## Volatility Graph
 ```{r}
+suppressWarnings(library(ggplot2))
 volest <- Vol(10,DDDret)
 
 volest2 <- Vol(30,DDDret)
