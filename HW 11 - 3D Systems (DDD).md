@@ -2,7 +2,7 @@
 title: "Unit 11 Homework"
 author: "Austin Hancock"
 date: "July 30, 2017"
-output: md_document
+output: html_document
 ---
 
 ## Load Data 
