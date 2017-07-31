@@ -38,16 +38,3 @@ Vol <- function(d, logrets)
 
 
 # Recreate Figure 6.12 in the text on page 155
-
-volest <- Vol(10,DDDret)
-
-volest2 <- Vol(30,DDDret)
-
-volest3 <- Vol(100,DDDret)
-
-volplot <- plot(volest,type="l", main="3D Systems (DDD)")
-volplot
-lines(volest2,type="l",col="red")
-
-lines(volest3, type = "l", col="blue")
-suppressMessages(suppressWarnings(ggsave(filename = "volDDD.png", plot = volplot)))
