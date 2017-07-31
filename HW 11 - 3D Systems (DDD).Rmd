@@ -26,3 +26,4 @@ lines(volest2,type="l",col="red")
 lines(volest3, type = "l", col="blue")
 dev.off()
 ```
+![](volDDD.png)
