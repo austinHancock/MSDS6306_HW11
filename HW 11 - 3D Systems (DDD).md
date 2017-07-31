@@ -26,3 +26,5 @@ lines(volest3, type = "l", col="blue")
 
 suppressMessages(suppressWarnings(ggsave(filename = "volDDD.png", plot = volplot)))
 ```
+
+![](volDDD.png)
