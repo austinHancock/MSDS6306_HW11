@@ -1,10 +1,3 @@
----
-title: "Unit 11 Homework"
-author: "Austin Hancock"
-date: "July 30, 2017"
-output: html_document
----
-
 ## Load Data 
 ```{r}
 source("HW 11 Calculations.R")
