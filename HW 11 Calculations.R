@@ -1,7 +1,8 @@
 # Change working directory to run local
-setwd("C:/git_repositories/MSDS6306/HW 11")
+setwd("C:/git_repositories/MSDS6306_HW11")
 
 library(tseries)
+suppressWarnings(library(ggplot2))
 
 DDDdata <- get.hist.quote('ddd',quote="Close")
 
@@ -44,8 +45,9 @@ volest2 <- Vol(30,DDDret)
 
 volest3 <- Vol(100,DDDret)
 
-plot(volest,type="l", main="3D Systems (DDD)")
-
+volplot <- plot(volest,type="l", main="3D Systems (DDD)")
+volplot
 lines(volest2,type="l",col="red")
 
 lines(volest3, type = "l", col="blue")
+suppressMessages(suppressWarnings(ggsave(filename = "volDDD.png", plot = volplot)))
