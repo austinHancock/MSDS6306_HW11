@@ -1,10 +1,10 @@
 ## Load Data 
-```{r}
+``` r
 source("HW 11 Calculations.R")
 ```
 
 ## Volatility Graph
-```{r}
+``` r
 volest <- Vol(10,DDDret)
 
 volest2 <- Vol(30,DDDret)
